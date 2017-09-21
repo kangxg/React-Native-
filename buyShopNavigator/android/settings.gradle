@@ -1,0 +1,3 @@
+rootProject.name = 'buyShopNavigator'
+
+include ':app'
