@@ -6,13 +6,14 @@ import {
   Text,
   TouchableHighlight
 } from 'react-native';
-
+import AnimatedThrough from './AnimatedThrough';
 export default class detail extends Component
 {
   render()
   {
     return(
      <View style = {styles.container}>
+
         <TouchableHighlight  onPress = {this._pressBackButton.bind(this)}>
            <Text style = {styles.back}>
             返回
@@ -22,6 +23,8 @@ export default class detail extends Component
            {this.props.productTitle}
 
         </Text>
+
+        <AnimatedThrough width = '200' height = '200'></AnimatedThrough>
      </View>
     );
   }

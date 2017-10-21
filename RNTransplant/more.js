@@ -8,6 +8,8 @@ import {
 
 } from 'react-native';
 import platform from './Platform';
+import screen from './Screen';
+
 export default class more extends Component
 {
   render()
@@ -16,8 +18,23 @@ export default class more extends Component
      <View style = {styles.container}>
 
         <Text style = {styles.text}>
+             获取原生API：{platform.systemName}
 
-             {platform.systemName}
+        </Text>
+        <Text style = {styles.text}>
+            width:{screen.width}
+        </Text>
+        <Text style = {styles.text}>
+            height:{screen.height}
+        </Text>
+        <Text style = {styles.text}>
+            缩放比例:{screen.pixelRatio}
+        </Text>
+        <Text style = {styles.text}>
+            屏幕宽度:{screen.resolutionX}
+        </Text>
+        <Text style = {styles.text}>
+            屏幕高度:{screen.resolutionY}
         </Text>
      </View>
     );
